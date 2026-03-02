@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navbar Design</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Common Navbar Style */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+
+        .nav-left a{
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            font-size: 16px;
+        }
+
+        .nav-right input{
+            padding: 6px;
+            border-radius: 4px;
+            border: none;
+            outline: none;
+        }
+
+        .nav-right button{
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* First Navbar (Blue Gradient) */
+        .nav-blue{
+            background: linear-gradient(to right, #0202fb, #4b00ff);
+        }
+
+        /* Second Navbar (Black) */
+        .nav-black{
+            background-color: black;
+        }
+
+        /* Third Navbar (Light Teal) */
+        .nav-teal{
+            background-color: #9cc3c9;
+        }
+
+        .nav-teal .nav-left a{
+            color: black;
+        }
+
+        .nav-teal .nav-right button{
+            border: 1px solid blue;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- First Navbar -->
+    <div class="navbar nav-blue">
+        <div class="nav-left">
+            <a href="#">Brand</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+        </div>
+        <div class="nav-right">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Second Navbar -->
+    <div class="navbar nav-black">
+        <div class="nav-left">
+            <a href="#">Brand</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+        </div>
+        <div class="nav-right">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Third Navbar -->
+    <div class="navbar nav-teal">
+        <div class="nav-left">
+            <a href="#">Brand</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+        </div>
+        <div class="nav-right">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+    </div>
+
+</body>
+</html>
