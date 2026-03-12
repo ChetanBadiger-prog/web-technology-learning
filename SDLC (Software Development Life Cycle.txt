@@ -1,0 +1,126 @@
+SDLC (Software Development Life Cycle)
+
+1. What is SDLC Model?
+
+SDLC (Software Development Life Cycle) is a process used to develop software in a systematic and structured way. It defines how software is planned, created, tested, and delivered to users.
+
+Why do we need SDLC?
+SDLC helps to:
+
+* Organize the software development process
+* Reduce project risks
+* Improve software quality
+* Deliver the project on time
+* Control development cost
+
+Without SDLC, software development can become unorganized and may lead to more errors.
+
+When do we use SDLC?
+SDLC is used when:
+
+* Developing a new software application
+* Improving or modifying an existing system
+* Building websites, mobile applications, enterprise software, etc.
+
+Example:
+Banking applications, e-commerce websites, hospital management systems.
+
+2. Stages of SDLC
+
+The SDLC process generally has six main stages:
+
+1. Requirement Gathering and Analysis
+
+2. Planning
+
+3. System Design
+
+4. Development (Coding)
+
+5. Testing
+
+6. Deployment and Maintenance
+
+7. Roles in Each SDLC Stage
+
+Requirement Gathering and Analysis
+Purpose: Understand what the client or user needs.
+
+Roles involved:
+
+* Business Analyst
+* Product Manager
+* Client / Stakeholders
+* System Analyst
+
+Planning
+Purpose: Plan project schedule, resources, and cost.
+
+Roles involved:
+
+* Project Manager
+* Technical Lead
+* Product Owner
+
+System Design
+Purpose: Create the system architecture and design.
+
+Roles involved:
+
+* Software Architect
+* System Designer
+* UI/UX Designer
+* Database Designer
+
+Development (Coding)
+Purpose: Write the actual program code.
+
+Roles involved:
+
+* Software Developers
+* Frontend Developers
+* Backend Developers
+* Full Stack Developers
+
+Testing
+Purpose: Identify and fix bugs before releasing the software.
+
+Roles involved:
+
+* QA Engineer
+* Test Engineer
+* Automation Tester
+* Manual Tester
+
+Deployment and Maintenance
+Purpose: Release the software to users and maintain it.
+
+Roles involved:
+
+* DevOps Engineer
+* System Administrator
+* Support Engineers
+* Maintenance Team
+
+4. Types of SDLC Models
+
+Waterfall Model
+A linear model where each phase is completed before moving to the next phase. Suitable for small and simple projects.
+
+Agile Model
+Development is done in small iterations with continuous feedback from users. It is the most widely used model today.
+
+Spiral Model
+Combines iterative development with risk analysis. Mostly used in large and complex projects.
+
+V-Model (Verification and Validation Model)
+Testing is done alongside development at every stage.
+
+Iterative Model
+Software is developed in repeated cycles where improvements are made in each iteration.
+
+Big Bang Model
+There is very little planning. Mostly used for small experimental or research projects.
+
+Summary
+SDLC is a step-by-step process used to develop high-quality software efficiently and systematically.
