@@ -1,0 +1,196 @@
+SDLC – Requirement Gathering and Feasibility Study
+
+1. Requirement Gathering
+
+Requirement Gathering is the process of collecting and understanding what the client or users need from the software before development starts. In this stage, the development team communicates with the client or stakeholders to clearly understand the system requirements and expectations.
+
+The main purpose of requirement gathering is to identify the problem, understand business needs, and define what the software should do. All the collected requirements are later documented in a document called SRS (Software Requirement Specification).
+
+Activities in Requirement Gathering:
+
+* Conduct meetings with clients or stakeholders
+* Ask questions to understand the business process
+* Identify system features and functions
+* Understand user expectations
+* Document functional and non-functional requirements
+* Prepare requirement documents
+
+Example:
+If a company wants to develop an online food delivery application, the requirements may include:
+
+* User registration and login
+* Restaurant listing
+* Food menu display
+* Add to cart
+* Online payment
+* Order tracking
+
+Roles Involved in Requirement Gathering:
+
+Business Analyst (BA)
+
+The Business Analyst acts as a bridge between the client and the technical team. The BA communicates with the client to understand business needs and converts them into clear system requirements.
+
+Responsibilities of Business Analyst:
+
+* Meet with stakeholders to understand business needs
+* Identify problems and required solutions
+* Convert business needs into functional requirements
+* Prepare documentation such as SRS
+* Communicate requirements to developers and other teams
+* Clarify doubts related to system requirements
+
+Example:
+If the client says they want an online shopping system, the Business Analyst will break it into smaller requirements such as product listing, shopping cart, payment gateway, and order management.
+
+Product Analyst (PA)
+
+The Product Analyst focuses more on the product features, user experience, and market needs. The PA ensures the product delivers value to users and aligns with market expectations.
+
+Responsibilities of Product Analyst:
+
+* Analyze market and user needs
+* Define product features
+* Prioritize features based on importance
+* Help create the product roadmap
+* Work with developers and designers to improve the product
+
+Example:
+In a food delivery app, the Product Analyst may decide that the first version should include login, restaurant listing, and order placement. Later versions may include live tracking, discounts, and recommendation systems.
+
+How BA and PA Work Together
+
+The Business Analyst focuses on business requirements and stakeholder needs, while the Product Analyst focuses on product features and user value.
+
+Business Analyst:
+
+* Understands business problems
+* Creates requirement documentation
+* Communicates with stakeholders
+
+Product Analyst:
+
+* Focuses on product features
+* Prioritizes features
+* Plans product improvements
+
+Both roles work together to ensure the product meets both business goals and user expectations.
+
+2. Feasibility Study
+
+Feasibility Study is the process of analyzing whether the proposed project is practical, achievable, and beneficial for the organization. It helps determine whether the project should proceed or not based on cost, resources, technology, and time.
+
+The main purpose of a feasibility study is to evaluate whether the project is worth developing and whether the organization has the resources to complete it successfully.
+
+Types of Feasibility:
+
+* Technical Feasibility
+* Economic Feasibility
+* Operational Feasibility
+* Schedule Feasibility
+
+Technical Feasibility checks whether the required technology, tools, and technical expertise are available to build the system.
+
+Economic Feasibility checks whether the project is financially viable and whether the benefits are greater than the development cost.
+
+Operational Feasibility checks whether the system will work effectively in the organization and whether users will accept and use it.
+
+Schedule Feasibility checks whether the project can be completed within the required timeline.
+
+Example:
+If a company wants to build a mobile banking application, the team must check:
+
+* Whether the required technology and tools are available
+* Whether the project budget is sufficient
+* Whether the project can be completed within the expected time
+* Whether users will adopt the system
+
+Roles Involved in Feasibility Study
+
+Project Manager (PM)
+
+The Project Manager is responsible for planning and managing the entire project. The PM coordinates with different teams and ensures the project goals are achievable.
+
+Responsibilities of Project Manager:
+
+* Define project scope
+* Estimate project timeline
+* Identify required resources
+* Coordinate between teams
+* Plan project schedule
+
+Example:
+The Project Manager may estimate that the project will take 6 months and require a team of 10 developers.
+
+Business Analyst (BA)
+
+During feasibility study, the Business Analyst helps the team understand the business requirements and evaluates whether they are practical.
+
+Responsibilities of Business Analyst:
+
+* Explain requirements to technical teams
+* Help estimate project complexity
+* Validate business needs
+* Assist in requirement clarification
+
+Human Resource (HR) Team
+
+The HR team checks whether the company has the required human resources to complete the project.
+
+Responsibilities of HR Team:
+
+* Check availability of skilled employees
+* Plan team structure
+* Hire additional developers if required
+* Allocate resources to the project
+
+Example:
+HR may check if the company has backend developers, frontend developers, testers, and DevOps engineers.
+
+Finance Management Team
+
+The Finance team evaluates the financial feasibility of the project.
+
+Responsibilities of Finance Team:
+
+* Estimate project development cost
+* Analyze budget availability
+* Calculate expected return on investment (ROI)
+* Decide whether the project is financially viable
+
+Example:
+If the project cost is 40 lakhs but expected revenue is 1 crore, the project may be approved.
+
+Architect Team
+
+The Software Architect team is responsible for technical planning and system architecture design.
+
+Responsibilities of Architect Team:
+
+* Choose appropriate technologies
+* Design system architecture
+* Evaluate scalability and performance
+* Identify technical risks
+
+Example:
+The architect may decide:
+Backend: Python or Java
+Frontend: React
+Database: PostgreSQL
+Cloud platform: AWS or Azure
+
+How All Teams Work Together in Feasibility Study
+
+1. The Business Analyst explains the business requirements.
+2. The Project Manager plans the project timeline and resources.
+3. The Architect team evaluates the technical feasibility.
+4. The HR team checks employee availability and hiring needs.
+5. The Finance team evaluates project cost and expected profit.
+
+If the project is technically possible, financially beneficial, and achievable within the timeline, the project proceeds to the next stage of SDLC, which is System Design.
+
+Summary
+
+Requirement Gathering focuses on understanding what the client wants and defining system requirements.
+
+Feasibility Study focuses on evaluating whether the project can be developed successfully with available resources, technology, time, and budget.
