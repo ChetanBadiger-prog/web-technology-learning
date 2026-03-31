@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>if else ladder</h1>
+    <script>
+        var a = 86;
+        var b = 86;
+
+        if (a>b)
+        {
+            console.log("a is greater ");  
+        }
+        if (a==b)
+        {
+            console.log("a is equal to b");     
+        }
+        else
+        {
+            console.log("b is greater"); 
+        }
+    </script>
+
+    <script>
+        var a = 30
+        var b = 90
+        var c = 70
+
+        if (a>b && a>c)
+        {
+            console.log("a is greater"); 
+        }
+        else if (b>a && b>c)
+        {
+            console.log("b is greater");
+        }
+        else
+        {
+           console.log("c is greater");
+            
+        }
+        
+    </script>
+
+
+    <h1>switch case operators</h1>
+    <script>
+       var trainername = prompt("enter a trainername :")
+       switch (trainername){
+        case "shannu":
+            {
+            console.log("python");
+            }
+        case "rahul":
+            {
+            console.log("web technology");  
+            }
+        default:
+            {
+                console.log("please enter a valid trainername")
+            }
+       }
+    </script>
+
+
+    <h1>actors with movies </h1>
+    <script>
+        var Actors = prompt("enter a actor name :")
+
+        switch(Actors)
+        {
+        case "yash":
+            {
+                console.log("KGF")
+            }
+        break
+        case "sudeep":
+            {
+                console.log("MAX");  
+            }
+        break
+        case "darshan":
+        {
+            console.log("Robert");
+            
+        }
+        }
+    </script>
+</body>
+</html>
