@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let num = [10,20,30,40,50]
+        // let result = num.filter((x)=>{
+        //     return x>30
+        // })
+        // console.log(result);
+        
+
+        // let result = num.map((x)=>{
+        //     return x*2
+        // })
+        // console.log(result);
+        
+
+        // let result = num.reduce((x,y)=>{
+            // return x+y
+        // },0)
+        // console.log(result);
+
+        let products = [1000,3000,6000,8000,14000,12000,8000]
+        console.log(products);
+        
+        let filtredvalue = products.filter((x)=>{
+            return x>4000
+        })
+        console.log(filtredvalue);
+        
+        let gettotal = filtredvalue.map((x)=>{
+            return x+x*0.18
+        })
+        console.log(gettotal);
+        
+        let total = gettotal.reduce((x,y)=>{
+            return x+y
+        },0)
+        console.log(total);
+        
+    </script>
+</body>
+</html>
