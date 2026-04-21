@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createbankaccount(){
+            let balance = 0
+
+            return{
+                deposit:function(amount){
+                    if(amount<=0){
+                        alert("invalid amount")
+                    }else{
+                        balance= amount+balance
+                        console.log(`deposit Amount :${amount} new balance : ${balance}`); 
+                    }
+                },
+        withdraw:function(amount){
+            // if(enteredpin !==pin){
+            //     alert("incorrect pin! access denied")
+            //     return;
+            // }
+            if(amount<=0){
+                alert("invalid amount")
+            }else if(amount>balance) {
+                alert("insufficient balance")
+            }else{
+                balance = balance-amount
+                console.log(`withdraw: ${amount},current balance:${balance}`)
+            }
+        }
+    }
+}
+        let nagasai = createbankaccount()
+        nagasai.deposit(3000)
+        nagasai.deposit(5000)
+        nagasai.withdraw(2000)
+        nagasai.withdraw(1000)
+        // nagasai.deposit(0)
+    </script>
+</body>
+</html>
