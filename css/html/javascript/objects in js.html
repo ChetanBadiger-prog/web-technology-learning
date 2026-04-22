@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // literal method
+        let user = {
+            name : "abc",
+            age : 23,
+            skills : ["coding","singing","reading"],
+            address :{
+                city : "xyz",
+                state : "tamilnadu"
+            }
+        }
+        console.log(user)
+
+        //object generator
+        let user = ({
+            name : "pqr",
+            age : 23,
+            area : "vijayanagara"
+
+        })
+        // console.log(user);
+        console.table(user)
+
+        //Accessing Object properties
+        let user = {
+            name : "nehru",
+            age : 32,
+            area : "bangalore"
+        }
+        console.log(user["area"]);
+        
+        // modifying the object
+        let user = {
+            name : "nehru",
+            age : 32,
+            area : "bangalore"
+        }
+        user.area("hello")
+        console.log(area);
+
+        // closure
+        function outer(){
+            let counter = 0;
+            function inner(){
+                counter++
+                console.log(counter);
+            }
+            return inner
+        }
+        let a = counter()
+        a()
+
+
+
+        
+    </script>
+</body>
+</html>

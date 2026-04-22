@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let players = ["virat","rohit","rahul","msd","bobb","morning"]
+        players.push("hardik")// it will push the at the end
+        console.log(players)
+
+        players.pop()
+        console.log(players);// it will delete the element at the end
+
+        players.unshift("suryavanshi")
+        console.log(players);// it will add the element in the first of the list
+        
+        players.shift()
+        console.log(players);// it will delete the first element in the list
+        
+        // splice method
+        players.splice(1,2)
+        console.log(players);// it willdelete the perticular element in the list
+        
+        players.splice(2,1,"hello","good")
+        console.log(players);// it will delete thenperticular index and add the elements
+        
+
+        // array destructuring
+        // importing the values and storing it in a seperate variable
+        let user = ["ABC",19,"bcom","chennai"]
+        let[name,age,department,city] = user
+        console.log(name);
+        console.log(age);
+        console.log(department);
+        console.log(city);
+         
+    </script>
+</body>
+</html>

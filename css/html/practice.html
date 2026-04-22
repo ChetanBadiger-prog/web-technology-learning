@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function createbankaccount(pin){
+            let balance = 0
+
+            return{
+                deposit:function(amount){
+                    if(amount<=0){
+                        alert("Invalid Amount")
+                    }else{
+                        balance = amount+balance
+                        console.log(`Deposit Amount :${amount}
+                         new balance :${balance}`);   
+                    }
+                },
+                withdraw:function(amount,enteredpin){
+                    if(enteredpin != pin){
+                        alert("incorrect pin! access denied")
+                        return;
+                    }
+
+                    if(amount<=0){
+                        alert("invalid amount")
+                    }else if(amount>balance){
+                        alert("insufficient balance, withdrawal denied")
+                        return;
+                    }else{
+                        balance = balance-amount
+                        console.log(`withdraw :${amount}, current balance :${balance}`);
+                    }
+                }
+            }
+        }
+        let abc = createbankaccount(1234)
+        abc.deposit(3000)
+        abc.deposit(2000)
+        abc.withdraw(2000, 1234)
+        abc.withdraw(1000, 1234)
+        abc.withdraw(2500, 1234)
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: goldenrod;
+            animation-name: colorchange;
+            animation-duration: 3s;
+            position: relative;
+            animation-timing-function: 3s;
+            animation-direction:reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colorchange {
+            /* from{
+                background-color: goldenrod;
+            }
+            to{
+                background-color: aqua;
+            }           */
+             0% {
+          top: 0;
+          left: 0;
+          background-color: goldenrod;
+        }
+        25% {
+          top: 0;
+          left: 600px;
+          background-color: deeppink;
+        }
+        50% {
+          background-color: green;
+          top: 600px;
+          left: 600px;
+        }
+        75% {
+          background-color: black;
+          top: 600px;
+          left: 0px;
+        }
+        100% {
+          background-color: aqua;
+          top: 0px;
+          left: 0px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div >
+
+    </div>
+</body>
+</html>

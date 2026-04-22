@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://wallpapercave.com/wp/wp4990452.jpg);
+            background-size: cover;
+        }
+        .galaxy{
+            width: 900px;
+            height: 900px;
+        }
+        .sun{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            background-image: url(https://tse1.mm.bing.net/th/id/OIP.__rmSj1y0olzYWS-hmBwzwHaHa?pid=ImgDet&w=184&h=184&c=7&dpr=1.3&o=7&rm=3);
+            background-size: cover;
+            box-shadow: 0 0 70px orange;
+        }
+        .orbit{
+            position: absolute;
+            border: 0.1px solid lightgray;
+            border-radius: 50%;
+            animation: rotate linear infinite;
+        }
+        .planet{
+            position: absolute;
+            top: -6px;
+            left: 42px;
+            border-radius: 50%; 
+        }
+        /* mercury */
+        .mercury-orbit{
+            width: 250px;
+            height: 250px;
+            top: 45%;
+            left: 47%;
+            animation-duration: 5s;
+        }
+        .mercury{
+            width: 50px;
+            height: 50px;
+            background-image: url(https://www.bing.com/th/id/OIP.zO0dlNZgSn3S_QcwNojv4gAAAA?w=193&h=191&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+            background-size: cover;
+        }
+        /* venus */
+        .venus-orbit{
+            height: 450px;
+            width: 450px;
+            top: 38%;
+            left: 43.6%;
+            animation-duration: 4s;
+        }
+        .venus{
+            height: 100px;
+            width: 100px;
+            top: 0%;
+            left: 7%;
+            background-image: url(https://www.bing.com/th/id/OIP.ZwfIJSoATnoGhxmDTcpuJwHaHa?w=240&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+            background-size: cover;
+        }
+        .earth-orbit{
+            height: 700px;
+            width: 700px;
+            border: 1px solid gray;
+            top: 29.7%;
+            left: 39.5%;
+            animation-duration: 5s;
+        }
+        .earth{
+            height: 70px;
+            width: 70px;
+            background-image: url(https://www.bing.com/th/id/OIP.W_MNej9EJ06uRXIohajBxAHaHa?w=204&h=211&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2);
+            background-size: cover;
+            border-radius: 50%;
+        }
+        @keyframes rotate {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy">
+        <div class="sun"></div>
+        
+        <div class="orbit mercury-orbit">
+            <div class="planet mercury"></div>
+        </div>
+
+        <div class="orbit venus-orbit">
+            <div class="planet venus"></div>
+        </div>
+        <div class="orbit earth-orbit">
+            <div class="earth"></div>
+        </div>
+    </div>
+</body>
+</html>

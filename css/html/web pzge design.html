@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 10px;
+            overflow-x: hidden;
+        }
+        nav{
+            height: 200px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .img_logo{
+            height: 130px;
+            justify-content: center;  
+            margin-left: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px yellow;          
+        }
+        .nav_links{
+         margin-left: auto;
+         display: flex;
+         gap: 30px;   
+        }
+        .nav_links a{
+            color: white;
+            font-weight: bolder;
+            font-size: 25px;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+        .nav_links a:hover{
+            transform: translatey(-8px);
+        }
+        .ano_nav{
+            height: 500px;
+            background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .nav_text{
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .nav_text h1{
+            font-size: 50px;
+            display: flex;
+            color: white;
+        }
+        .nav_text h2{
+            font-size: 30px;
+            color: white;
+        }
+        .nav_text button{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 1s;
+            font-weight: bold;
+        }
+        .nav_text button:hover{
+            background-color: orange;
+            color: black;
+            box-shadow: 0 0 23px orange;
+        }
+        .pictures{
+           display: flex; 
+           justify-content: center;
+           gap: 100px;
+           margin-top: 70px;
+        }
+        .food_card{
+          width: 700px;
+          height: 1000px; 
+          border-radius: 20px;
+          overflow: hidden; 
+          box-shadow: 0 0 40px gray;
+          transition: 0.1234s;
+        }
+        .food_card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .food_card:hover{
+            transform: translateY(-15px);
+            box-shadow: 0 0 25px lightgray;
+        }
+        .greet_nav{
+            color: black;
+            background-color: goldenrod;
+            height: 200px;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+        }
+        .greet_text h2{
+            font-size: 40px;
+        }
+        .greet_text h4{
+            font-size: 28px;
+        }
+        .reviews{
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            font-size: large;
+        }
+        .reviews_sec{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            gap: 80px;
+        }
+        .f1st_review{
+            height: 360px;
+            width: 360px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px gray;
+            overflow: hidden;
+            transition: 0.23s;
+        }
+        .f1st_review:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px lightgray;
+        }
+        .f1st_review p{
+            font-weight:bolder;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 10px;
+            text-align:justify;
+        }
+        .s2nd_review{
+            height: 360px;
+            width: 360px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px gray;
+            overflow: hidden;
+            transition: 0.23s;
+        }
+        .s2nd_review:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px lightgray;
+        }
+        .s2nd_review p{
+            font-weight:bolder;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 10px;
+            text-align:justify;
+        }
+        .t3rd_review{
+            height: 360px;
+            width: 360px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px gray;
+            overflow: hidden;
+            transition: 0.23s;
+        }
+        .t3rd_review:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px lightgray;
+        }
+        .t3rd_review p{
+            font-weight:bolder;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-right: 10px;
+            text-align:justify;
+        }
+        .bgray{
+            height: 500px;
+            background-color: #b4b2b2;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .subscribe{
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .subscribe h1{
+            font-size: 40px;
+        }
+        .subscribe h3{
+            font-size: 30px;
+        }
+        .subscribe input{
+            padding: 20px;
+            border-radius: 20px;
+            padding-right: 80px;
+        }
+        .subscribe button{
+            padding: 15px;
+            border-radius: 20px;
+            padding-right: 40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .bottom_border{
+            height: 200px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .Quote{
+            color: white;
+            font-size: 30px;
+        }
+        .ordered_list{
+            color: white;
+        }
+        .ordered_list a{
+            color: white;
+            text-decoration: none;
+        }
+        .contact{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="img_logo" src="https://static.vecteezy.com/system/resources/previews/010/482/797/large_2x/kitchen-chef-logo-design-template-vector.jpg" alt="img">
+        <div class="nav_links" >
+        <a href="">HOME</a>
+        <a href="">ABOUT</a>
+        <a href="">CONTACT</a>
+        <a href="">OFFERS</a>
+        </div>
+    </nav>
+    <nav class="ano_nav">
+        <div class="nav_text">
+            <h1>Welcome To Fast Food</h1>
+            <h2>your one stop to eat now</h2>
+            <button>Order Now</button>
+        </div> 
+    </nav>
+    <div class="pictures">
+        <div class="food_card">
+        <img src="https://www.thehealthymaven.com/wp-content/uploads/2020/05/Bowl-Recipe-Breakdown-3.png" alt="img1">
+        </div>
+        <div class="food_card">
+        <img src="https://i.pinimg.com/originals/e9/54/a6/e954a6c568dcdd7cb6733824d8a8a2df.jpg" alt="img2">
+        </div>
+        <div class="food_card">
+        <img src="https://www.aheadofthyme.com/wp-content/uploads/2024/06/mediterranen-bowl-4-683x1024.jpg" alt="img3">
+        </div>
+    </div>
+    <nav class="greet_nav">
+        <div class="greet_text">
+        <h2>South Indian Thali</h2>
+        <h4>Your Order, Our Service</h4>
+        </div>
+    </nav>
+    <div class="reviews">
+        <h1>Reviews</h1>
+    </div>
+    <div class="reviews_sec">
+        <div class="f1st_review">
+            <h1>CHETHAN BADIGER</h1>
+            <h1>⭐⭐⭐⭐</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero optio doloribus tempora sint qui quas blanditiis quam inventore voluptatum voluptas, deserunt exercitationem veritatis quos sunt expedita numquam cum suscipit perspiciatis, laborum aut quisquam. Nemo sit molestias inventore tempora cumque id.</p>
+        </div>
+        <div class="s2nd_review">
+            <h1>SUNDAR PICHAI</h1>
+            <h1>⭐⭐⭐⭐⭐</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et ratione nobis adipisci reiciendis, corporis soluta consequuntur architecto at optio repellendus repudiandae cum eligendi molestiae saepe mollitia tempore. Voluptate expedita mollitia quo sint voluptas commodi consectetur quasi minus fugiat vel?</p>
+        </div>
+        <div class="t3rd_review">
+            <h1>JAMES CAMARON</h1>
+            <h1>⭐⭐⭐⭐⭐</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum porro commodi quia vero itaque neque odit aliquam consequatur earum ipsum. Distinctio molestias iure perferendis reiciendis hic quod ea aperiam cumque, qui id, quibusdam, rerum nam odio temporibus. Eum, quasi aliquam.</p>
+        </div>
+    </div>
+    <nav class="bgray">
+        <div class="subscribe">
+            <h1>Subscribe to Our Channel</h1>
+            <h3>For updates</h3>
+            <input type="text" placeholder="Enter Gmail"><br><br>
+            <button>Subscibe</button>
+        </div>
+    </nav>
+    <nav class="bottom_border">
+        <div class="Quote">
+           <h2>Life of Food</h2> 
+        </div>
+        <div class="ordered_list">
+            <ol>
+                <li><a href="">Home</a></li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Sevice</a></li>
+                <li><a href="">Ratings</a></li>
+            </ol>
+        </div>
+        <div class="contact">
+            <h3>chethandvg2004@gmail.com</h3>
+            <h3>Ph.No - 6366463928</h3>
+            <h3>Address - Davanagere</h3>
+        </div>
+    </nav>
+</body>
+</html>

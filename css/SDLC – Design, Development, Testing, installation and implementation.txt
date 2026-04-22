@@ -1,0 +1,251 @@
+SDLC – Design, Development, Testing, Installation, Implementation, and Maintenance Phases
+
+1. Design Phase
+
+After requirement gathering and feasibility study are completed, the project moves to the Design phase. In this phase, the structure and architecture of the software system are planned.
+
+The design phase mainly consists of two parts:
+
+* High Level Design (HLD)
+* Low Level Design (LLD)
+
+High Level Design (HLD)
+
+High Level Design describes the overall architecture of the system. It shows how different modules of the system interact with each other and how the system is structured.
+
+HLD focuses on the overall system design rather than detailed coding logic.
+
+Main Components of HLD:
+
+* System architecture
+* Technology stack selection
+* Overview of database design
+* Identification of system modules
+* Data flow between modules
+* Integration with external systems
+
+Example:
+For an Online Shopping System, the High Level Design may include modules such as:
+
+* User Management Module
+* Product Management Module
+* Order Management Module
+* Payment System
+* Notification System
+
+In HLD, the architect and senior developers decide:
+
+* Programming language (Python, Java, etc.)
+* Frameworks (React, Django, Spring Boot, etc.)
+* Database (MySQL, PostgreSQL, MongoDB)
+* Cloud or server infrastructure
+
+Roles involved in HLD:
+
+* Software Architect
+* Technical Lead
+* Senior Developers
+* Project Manager
+
+Low Level Design (LLD)
+
+Low Level Design focuses on the detailed internal design of each module defined in HLD. It explains how each module will be implemented in code.
+
+LLD includes detailed information about classes, methods, data structures, algorithms, and database tables.
+
+Main Components of LLD:
+
+* Class diagrams
+* Method definitions
+* Function logic
+* API structure
+* Database table schema
+* Error handling logic
+
+Example:
+For the User Login Module, LLD may include:
+
+* Login function
+* Password validation process
+* Database query for user authentication
+* Session creation after login
+
+Roles involved in LLD:
+
+* Software Developers
+* Technical Lead
+* Software Architect
+
+2. Development Phase (Coding)
+
+The Development phase is where the actual software system is built. Developers write the source code based on the designs created in HLD and LLD.
+
+Activities in Development Phase:
+
+* Writing program code
+* Implementing system modules
+* Creating database tables and queries
+* Developing APIs
+* Integrating modules together
+* Performing code reviews
+* Using version control systems such as Git
+
+Example:
+Frontend Development:
+
+* Designing user interfaces using HTML, CSS, JavaScript, or frameworks like React.
+
+Backend Development:
+
+* Implementing business logic using Python, Java, Node.js, etc.
+
+Database Development:
+
+* Designing tables, indexes, and queries.
+
+Roles involved:
+
+* Frontend Developers
+* Backend Developers
+* Full Stack Developers
+* Database Developers
+
+3. Testing Phase
+
+After development, the software is tested to identify bugs and ensure that the system works according to the requirements.
+
+Testing verifies that the software meets the specifications defined in the SRS document.
+
+Types of Testing:
+
+Unit Testing
+Testing individual functions or modules.
+
+Integration Testing
+Testing interaction between different modules.
+
+System Testing
+Testing the entire system as a whole.
+
+User Acceptance Testing (UAT)
+Testing performed by the client or users to verify that the system satisfies business requirements.
+
+Activities in Testing Phase:
+
+* Preparing test cases
+* Executing tests
+* Reporting defects
+* Fixing bugs
+* Retesting after fixes
+
+Roles involved:
+
+* QA Engineers
+* Test Engineers
+* Automation Testers
+* Manual Testers
+
+4. Installation Phase
+
+Installation is the process of setting up the software on the required systems or environments so that it can run properly.
+
+During this phase, the software and all required dependencies are installed on servers, client machines, or cloud platforms.
+
+Activities in Installation Phase:
+
+* Installing the application on servers
+* Installing required software dependencies
+* Setting up databases
+* Configuring system settings
+* Setting up network configurations
+* Verifying that the system runs correctly after installation
+
+Example:
+If a company installs a hospital management system, the installation phase may include:
+
+* Installing the software on hospital computers
+* Connecting the system to the hospital database
+* Configuring network access for staff
+
+Roles involved:
+
+* System Administrators
+* DevOps Engineers
+* IT Support Team
+* Deployment Engineers
+
+5. Implementation Phase (Deployment)
+
+Implementation is the process of making the software available for real users. The system is deployed in the production environment and users start using the application.
+
+Activities in Implementation Phase:
+
+* Deploying the application to production servers
+* Migrating existing data into the system
+* Training users
+* Monitoring the system performance
+* Ensuring the system works correctly in the live environment
+
+Different Environments:
+
+* Development Environment
+* Testing Environment
+* Staging Environment
+* Production Environment
+
+Roles involved:
+
+* DevOps Engineers
+* Deployment Engineers
+* System Administrators
+* Support Engineers
+
+6. Maintenance Phase
+
+After the software is deployed and used by real users, it enters the Maintenance phase. This phase ensures the system continues to operate effectively over time.
+
+Maintenance includes fixing bugs, improving performance, and adding new features.
+
+Types of Maintenance:
+
+Corrective Maintenance
+Fixing errors discovered after deployment.
+
+Adaptive Maintenance
+Updating the software to work with new hardware, operating systems, or technologies.
+
+Perfective Maintenance
+Improving system performance and adding enhancements.
+
+Preventive Maintenance
+Making improvements to reduce future risks and issues.
+
+Activities in Maintenance Phase:
+
+* Bug fixing
+* Performance improvements
+* Security updates
+* System monitoring
+* Feature enhancements
+* Updating documentation
+
+Roles involved:
+
+* Support Engineers
+* Maintenance Developers
+* DevOps Engineers
+* System Administrators
+
+Summary
+
+The Design phase defines the structure of the system through High Level Design and Low Level Design.
+
+The Development phase involves writing the program code according to the design.
+
+The Testing phase verifies that the system works correctly and meets the defined requirements.
+
+The Installation phase sets up the software on the required systems and infrastructure.
+
+The Implementation phase deploys the system to production for real users.
+
+The Maintenance phase ensures the system continues to operate efficiently by fixing issues, improving performance, and updating features.

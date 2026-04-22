@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name : "abc",
+            dep : "cse",
+            course : "PFS"
+        }
+        Object.seal(user)
+
+        // inserting an element(not work)
+        user.place = "bangalore"
+        console.log(user);
+        
+        // deleteing an object(not work)
+        delete user.name
+        console.log(user);
+
+        // updating an object(it will work)
+        user.name = "pqr"
+        console.log(user);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let correct_pin = 1234
+        let balance = 10000
+        alert("Welcome to ATM")
+        alert("please insert the card")
+
+        let card = prompt("enter 1 :(card inserted sucessfully) or enter 2:(insert card properly")
+
+        if (card=="1"){
+            alert("card inserted successfully")
+
+            let choice = prompt("choose the language \n1. English\n2. kannada\n3. hindi")
+            if (choice=="1"){
+                alert("continue with English")
+
+                let pin = prompt("Enter the pin")
+                if (pin==correct_pin){
+
+                    let enquiry =prompt("choose \n1. Balance Enquiry\n2. Withdraw amount")
+                    if (enquiry == "1"){
+                        alert("your balance is" +balance)
+                    }else if(enquiry="2"){
+                        amount = prompt("enter the amount to withdraw")
+                        amount = parseInt(amount)
+
+                        if (amount%100==0){
+                            if(amount<=balance){
+                                balance -= amount
+                                alert("collect the cash" +amount)
+                                alert("your balance is " +balance)
+                            }else{
+                                alert("in sufficient balance")
+                            }
+                        }else{
+                            alert("amount should be multiple of 100")
+                        }
+                    }else{
+                        alert("thankyou visit again")
+                    }
+                }else{
+                    alert("Enter the valid pin")
+                }
+            }else{
+                alert("choose only english")
+            }
+        }else{
+            alert("insert the card properly")
+        }
+    </script>
+</body>
+</html>
