@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="Hello">
+    // types of DOM selectors
+        <!-- document.getElementById()
+        document.getElementsByClassName()
+        document.getElementsByTagName()
+        document.querySelector()
+        document.querySelectorAll() -->
+
+        <h1 id="head">Chethan</h1>
+        <button onclick="change()">Click</button>
+
+        <script>
+            function change(){
+                let head = document.getElementById("head")
+                let body = document.getElementById("Hello")
+                head.innerText="RCB"
+                head.style.color = "golden rod"
+                head.style.backgroundColor = "red"
+                head.style.padding = "0px"
+                head.style.margin = "0px"
+                body.style.margin="0px"
+                body.style.padding = "0px"
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user ={
+            name : "abc",
+            dep : "cse",
+            course : "PFS"
+        }
+        Object.freeze(user)
+
+        //updating an a object
+        user.name = "pqr"
+        console.log(user);
+
+        // to check the freeez
+        console.log(Object.isFrozen(user));
+        
+        
+    </script>
+</body>
+</html>
